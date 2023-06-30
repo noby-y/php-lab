@@ -1,0 +1,21 @@
+body {
+    background-color: #181818;
+    font-family: 'Courier New', monospace;
+    font-size:169%;
+    color:aliceblue;
+    margin-left: 10%;
+}
+
+title {
+    display: none;
+}
+
+.section_start {
+    color:limegreen;
+    font-size: 150%;
+    text-align: center;
+}
+
+.indent {
+    margin-left: -10%;
+}
