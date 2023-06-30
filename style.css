@@ -19,3 +19,16 @@ title {
 .indent {
     margin-left: -10%;
 }
+
+a {
+    color:cyan;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    font-size: 150%;
+}
