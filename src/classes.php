@@ -56,10 +56,6 @@
         echo "- \$obj_sub = new SubClass();";  nline();
         $obj_sub  = new SubClass();
         nline();
-        // echo "var_dump(\$obj1) & var_dump(\$obj2):";  nline();
-        // var_dump($obj_base);    nline();
-        // var_dump($obj_sub);     nline();
-        // nline();
 
         echo "- Public info getter function returned:";    nline();
         echo $obj_base->get_info_public();      nline(2);
