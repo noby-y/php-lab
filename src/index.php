@@ -9,7 +9,7 @@
 </head>
 
 <body>
-<!-- 
+    <!-- 
     <nav class ="indent">
         <a href="index.php">        Main            <br></a>
         <a href="variables.php">    Variables       <br></a>
@@ -24,15 +24,32 @@
     section_start("Variables");
         echo "<a href=\"variables.php\">Variables<br></a>";
     section_end();
-    
+
     section_start("Arrays & loops");
         echo "<a href=\"arrays_loops.php\">Arrays % loops<br></a>";
     section_end();
-        
-    section_start("Classes");    
+
+    section_start("Classes");
         echo "<a href=\"classes.php\">Classes<br></a>";
     section_end();
 
+    ?>
+
+    <!-- POST method -->
+
+    <form class="indent" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+        Name: <input type="text" name="fname">
+        <input type="submit">
+    </form>
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $name = $_POST['fname'];
+        if (empty($name)) {
+            echo "<a class=\"indent\" style=\"text-decoration: none;\">Name is empty</a>";
+        } else {
+            echo "<a class=\"indent\" style=\"text-decoration: none;\">" . $name . "</a>";
+        }
+    }
     ?>
 </body>
 
