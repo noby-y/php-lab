@@ -50,6 +50,18 @@
         echo "\$arr_exploaded == ";
         print_r($arr_exploaded);    nline(2);
         
+        echo "hash table:"; nline();
+        print_r($hash_table = [
+            "string" => $str,
+            "integer" => $int,
+            "float" => $float,
+            "boolean" => $bool,
+            "number2" =>$num2,
+        ]); nline(2);
+
+        echo "unset(\$hash_table[\"number2\"]);";   nline();
+        unset($hash_table["number2"]);
+        print_r($hash_table);
         
     section_end();
 
