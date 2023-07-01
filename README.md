@@ -8,3 +8,6 @@
 ![Arrays & loops](/img/arrays_loops.png)
 ## Classes
 ![Classes](/img/classes.png)
+
+## Post method
+![POST](/img/post_method.png)
